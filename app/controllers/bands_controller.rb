@@ -1,2 +1,5 @@
 class BandsController < ApplicationController
-end 
+    get '/bands' do 
+      "Hello Band!" 
+    end
+end
