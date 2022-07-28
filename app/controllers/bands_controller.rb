@@ -1,5 +1,6 @@
 class BandsController < ApplicationController
     get '/bands' do 
-      "Hello Band!" 
+    #   bands = Band.all
+    #   bands.to_json 
     end
 end

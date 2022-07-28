@@ -1,5 +1,6 @@
 class MusiciansController < ApplicationController
     get '/musicians' do
-        "Hello Musicians!"
+        # musicians = Musician.all
+        # musicians.to_json
     end 
 end 
