@@ -13,13 +13,13 @@ puts "🌱 Seeding spices..."
     )
 end
 
-10.times do 
+20.times do 
     Musician.create(
     name: Faker::Name.name,
     instrument: Faker::Music.instrument,
     years_experience: Faker::Number.between(from:1, to: 20),
     city: Faker::Address.city,
-    band_id: rand(1..10) 
+    band_id: rand(1..20)
     )
 end
 
