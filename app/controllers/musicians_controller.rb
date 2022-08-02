@@ -16,4 +16,11 @@ class MusiciansController < ApplicationController
             years_experience: params[:years_experience]
           )
           musician.to_json
+    end
+    
+    delete '/musicians/:id' do
+        musician = Musician.find(params[:id])
+        musician.destroy
+        musician.to_json
+    end
 end 
