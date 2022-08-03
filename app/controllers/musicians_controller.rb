@@ -12,7 +12,7 @@ class MusiciansController < ApplicationController
         musician = Musician.create(
             name: params[:name],
             instrument: params[:instrument],
-            city: params:[:city]
+            city: params[:city],
             years_experience: params[:years_experience]
           )
           musician.to_json
