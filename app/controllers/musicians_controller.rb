@@ -17,6 +17,14 @@ class MusiciansController < ApplicationController
           )
           musician.to_json
     end
+
+    patch 'musicians/:id' do
+        musician = Musician.find(params[:id])
+        musician.update(
+          retired: params[:retired]
+        )
+        musician.to_json
+    end
     
     delete '/musicians/:id' do
         musician = Musician.find(params[:id])
