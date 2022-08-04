@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_03_191634) do
+ActiveRecord::Schema.define(version: 2022_08_04_170332) do
 
   create_table "bands", force: :cascade do |t|
     t.string "name"
@@ -24,7 +24,8 @@ ActiveRecord::Schema.define(version: 2022_08_03_191634) do
     t.integer "years_experience"
     t.string "city"
     t.integer "band_id"
-    t.boolean "retired"
+    t.boolean "hired"
+    t.boolean "fired"
   end
 
 end

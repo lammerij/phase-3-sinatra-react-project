@@ -21,7 +21,7 @@ class MusiciansController < ApplicationController
     patch 'musicians/:id' do
         musician = Musician.find(params[:id])
         musician.update(
-          retired: params[:retired]
+          hired: params[:hired]
         )
         musician.to_json
     end
