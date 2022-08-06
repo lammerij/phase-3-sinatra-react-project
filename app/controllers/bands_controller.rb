@@ -18,9 +18,4 @@ class BandsController < ApplicationController
         band.to_json
     end
 
-    delete '/bands/:id' do
-        band = Band.find(params[:id])
-        band.destroy
-        band.to_json
-    end
 end

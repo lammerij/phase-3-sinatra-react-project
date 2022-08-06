@@ -20,7 +20,8 @@ end
     years_experience: Faker::Number.between(from:1, to: 20),
     city: Faker::Address.city,
     band_id: rand(1..20),
-    hired: "false"
+    hired: "false",
+    fired: "false"
     )
 end
 
